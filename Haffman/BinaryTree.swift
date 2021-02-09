@@ -25,6 +25,7 @@ extension BinaryTree: CustomStringConvertible {
   
 extension BinaryTree {
     
+    @discardableResult
     func search<T: StringProtocol>(searchValue: T, str: inout String) -> BinaryTree? {
       switch self {
       case .empty:
